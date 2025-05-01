@@ -1,0 +1,16 @@
+<script src="carrito.js"></script>
+<script>
+  // Simulamos que el usuario presiona un botón para comprar "Brimstone"
+  function comprarBrimstone() {
+    agregarAlCarrito("Brimstone", 15.99);
+  }
+
+  // Otro ejemplo: comprar Sacred Heart
+  function comprarSacredHeart() {
+    agregarAlCarrito("Sacred Heart", 20.50);
+  }
+</script>
+
+<!-- Botones de compra -->
+<button onclick="comprarBrimstone()">Agregar Brimstone</button>
+<button onclick="comprarSacredHeart()">Agregar Sacred Heart</button>
