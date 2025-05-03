@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac</title>
+  <link rel="stylesheet" href="isaacStyle.css">
+  <script src="isaacScript.js"></script>
+</head>
+<body>
+  <div class="carta">
+    <div class="fila">
+      <!-- Columna izquierda: Carta del personaje -->
+      <div class="contenedor-personaje">
+        <h1 class="nombre-personaje">Isaac</h1>
+      
+        <div class="imagen-box">
+          <img src="img/isaac.png" alt="Isaac" class="imagen-personaje">
+        </div>
+      
+        <div class="stats">
+          <h3>Estadísticas</h3>
+          <p><img src="icons/heart.webp" alt="Salud" class="stat-icon"> <strong>Salud:</strong> 3 corazones</p>
+          <p><img src="icons/speed.webp" alt="Velocidad" class="stat-icon"> <strong>Velocidad:</strong> 1.00</p>
+          <p><img src="icons/damage.webp" alt="Daño" class="stat-icon"> <strong>Daño:</strong> 3.50</p>
+          <p><img src="icons/tears.webp" alt="Lágrimas" class="stat-icon"> <strong>Lágrimas:</strong> 2.73</p>
+        </div>
+      
+        <div class="info-extra">
+          <h3>Objeto Inicial</h3>
+          <p>The D6 (desbloqueable)</p>
+        </div>
+      
+        <button onclick="alternarTainted()" id="botonTainted">Tainted</button>
+      </div>
+  
+      <!-- Columna derecha: Info descriptiva -->
+      <div class="info-personaje">
+        <h2 id="descripcion">Descripción</h2>
+        <p><strong>Isaac</strong> es el personaje principal de <em>The Binding of Isaac</em>. Es el único personaje desbloqueado por defecto.</p>
+        <p>Isaac comienza con 3 corazónes rojos y una bomba. También comenzara con el D6 una vez lo hayas desbloqueado.</p> 
+  
+        <h2 id="logros">Logros desbloqueables</h2>
+        <ul>
+          <li><img src="IMG/Isaac'sHead.webp">Isaac's Head - Completa Boss Rush</li>
+          <li>Lost Baby - Derrota a Mom's Heart en modo difícil</li>
+          <li>Isaac's Tears - Derrota a Isaac</li>
+          <li>Mom's Knife - Derrota a Satan</li>
+          <li>Missing Poster - Derrota a The Lamb</li>
+          <li>The D20 - Derrota a ???</li>
+          <li>Lil' Chest - Derrota a Ultra Greed</li>
+          <li>D1 - Derrota a Ultra Greedier</li>
+          <li>Fart Baby - Derrota a Hush</li>
+          <li>Cry Baby - Derrota a Mega Satan</li>
+          <li>D infinity - Derrota a Delirium</li>
+          <li>Meat Cleaver - Derrota a Mother </li>
+          <li>Options? - Derrota a The Beast</li>
+          <li> The Broken - Usa la Red Key para abrir el cuarto oculto en Casa</li>
+          <li> Buddy Baby - Completa todas las marcas en modo dificil </li>
+        </ul>
+
+        <h2 id="trivia">Trivia</h2>
+        <ul>
+          <li>Isaac hace referencia a la historia bíblica de la unión de Isaac, en la que Dios le ordenó a Abraham sacrificar a su único hijo, Isaac, para demostrar su lealtad y amor.
+            "Entonces Dios le dijo: 'Toma a tu hijo, tu único hijo, a quien amas, Isaac, y ve a la región de Moriah. Sacrifícalo allí como holocausto en el monte que yo te mostraré'" (Génesis 22:2).</li>
+            <li>Edmund ha declarado que Isaac es zurdo, pero en la escena inicial, Isaac sostiene un lápiz con la mano derecha. 
+              Esto podría ser una referencia al prejuicio católico contra la zurdera, derivado de Mateo 25:33, que proclama que Dios pondrá a los que merecen ascender al Cielo a su derecha y a los que merecen descender al Infierno a su izquierda.
+              La madre de Isaac podría haberlo obligado a trabajar con la mano derecha. La práctica general de obligar a los zurdos a usar la mano derecha también ha sido una práctica desde hace mucho tiempo, y la aceptación de los zurdos solo comenzó a notarse en 1971.</li>
+              <li>Isaac es calvo porque su mamá lo rapo</li>
+              <li>El nombre completo de Isaac es Isaac Moriah, el lugar donde Abraham toma a su hijo Isaac para sacrificarlo, en el Libro de Genesis</li>
+        </ul>
+      </div>
+  
+    </div>
+  </div>
+</body>
+</html>
