@@ -1,9 +1,42 @@
-/* --- Tipografía principal --- */
-h1 {
+*{
     font-family: 'Press Start 2P', cursive;
+    font-size: .75vw;
+}
+
+body {
+    background-image: url('img/wallpaper.jpg'); /* Ruta a la imagen dentro de la carpeta img */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen cuando se haga scroll */
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    font-size: .55vw;
+}
+
+/* Cambiar el color de los enlaces de la barra de navegación */
+.nav-tabs .nav-link {
+    font-size: 1vw;
+    color: #fff;  
+}
+
+/* Cambiar color cuando pasas el mouse por encima */
+.nav-tabs .nav-link:hover {
+    background-color: #8b0000;
+}
+
+/* Cambiar color para el enlace activo */
+.nav-tabs .nav-link.active {
+    background-color: #5a0000;
+}
+
+/* H1 de index */ 
+h1 {
     background: linear-gradient(45deg, #efba34, #e09300);
     color: #eee;
-    font-size: 5vw;
+    font-size: 2vw;
     border: 3px dashed rgb(9, 6, 3);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
@@ -11,44 +44,35 @@ h1 {
     text-align: center;
 }
 
-
-/* --- Estilos base (modo oscuro por defecto) --- */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #111;
+/* H1 de pagina2 */
+.titulo-principal{
+    background: linear-gradient(45deg, #b8b0b0, #410e01);
     color: #eee;
-    margin: 0;
-    padding: 0;
+    font-size: 2.5vw;
+    border: 3px solid rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
 }
 
 header, footer {
     background-color: #222;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 
 .imagen-portada img {
     width: 100%;
-    max-height: 400px;
+    max-height: 500px;
     object-fit: cover;
     object-position: 50% 62%;
 }
 
-.botones-navegacion {
-    text-align: center;
-    margin: 20px;
-}
-
-.botones-navegacion button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
 .llamado-accion {
     text-align: center;
-    margin: 40px 0;
+    margin: 40px;
+    color: #fff;
 }
 
 .boton-ver-mas {
@@ -65,17 +89,19 @@ header, footer {
     justify-content: space-around;
     padding: 20px;
     flex-wrap: wrap;
+    color: #fff;
 }
 
-.producto {
-    width: 150px;
-    text-align: center;
-    margin: 10px;
-}
-
-.producto img {
-    width: 100px;
-    height: 100px;
+/* Boton detener lluvia */
+#detenerLluvia, #volver-inicio{
+    font-family: 'Press Start 2P', cursive;
+    font-size: .75vw;
+    border: 3px solid rgb(9, 6, 3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-right: 10px; /* Ajusta el margen según sea necesario */
+    background-color: #740b12;
+    border-color: #fff;
 }
 
 /* --- Contenedor de la lluvia --- */
@@ -111,6 +137,13 @@ header, footer {
     }
 }
 
+/* Boton modo claro */
+body.light #modoToggle {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
 /* --- Modo Claro --- */
 body.light {
     background-color: #ffffff;
@@ -126,18 +159,26 @@ body.light .boton-ver-mas {
     color: #fff;
 }
 
-body.light .gota {
-    background-color: #4aa3df; /* gotas azules */
+/* --- Ajuste de sección en modo claro --- */
+body.light .parrafos-historia {
+    color: #ffffff;
+    margin-left: 10em;
+    margin-right: 10em;
+    padding: .25vw;
+    border-radius: 8px;
+    font-size: .75vw;
+}
+
+/* Boton modo oscuro */
+body.dark #modoToggle {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
 /* --- Modo Oscuro --- */
 body.dark {
-    background-color: #111;
     color: #eee;
-}
-
-body.dark header, body.dark footer {
-    background-color: #222;
 }
 
 body.dark .boton-ver-mas {
@@ -145,7 +186,16 @@ body.dark .boton-ver-mas {
     color: #fff;
 }
 
-body.dark .gota {
-    background-color: crimson; /* gotas rojas (sangre) */
+body.dark header, body.dark footer {
+    background-color: #222;
 }
 
+/* --- Ajuste de sección en modo oscuro --- */
+body.dark .parrafos-historia {
+    color: #ffffff;
+    margin-left: 10em;
+    margin-right: 10em;
+    padding: .25vw;
+    border-radius: 8px;
+    font-size: .75vw;
+}
