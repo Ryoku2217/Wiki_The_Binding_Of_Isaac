@@ -40,6 +40,7 @@ body {
   align-items: center;
   width: 100%;
   flex: 0 0 300px;
+  max-height: 55%;
 }
 
 .imagen-box {
@@ -57,7 +58,7 @@ body {
 
 .imagen-personaje {
   width: 100%;
-  max-width: 200px;
+  max-width: 150px;
   border-radius: 6px;
 }
 
@@ -74,6 +75,12 @@ body {
 .stats h3, .info-extra h3 {
   margin-top: 0;
   color: #ffd166;
+}
+
+.info-extra ul {
+    padding-left: 20px;
+    list-style-type: square;
+    line-height: 2;
 }
 
 .stat-icon {
@@ -120,7 +127,7 @@ body {
 }
 
 #botonTainted {
-  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: #b61d1d;
   color: white;
   border: none;
