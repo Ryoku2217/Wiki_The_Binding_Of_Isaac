@@ -9,12 +9,6 @@ body {
   justify-content: center;
 }
 
-.fondo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .carta {
   background-color: #5C3A31;
   width: 100%;
@@ -24,8 +18,8 @@ body {
   border-radius: 10px;
   box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: top;
   font-family: Arial, sans-serif;
   image-rendering: pixelated;
 }
@@ -40,7 +34,7 @@ body {
   align-items: center;
   width: 100%;
   flex: 0 0 300px;
-  max-height: 55%;
+  max-height: 60%;
 }
 
 .imagen-box {
@@ -57,7 +51,7 @@ body {
 }
 
 .imagen-personaje {
-  width: 100%;
+  width: 150%;
   max-width: 150px;
   border-radius: 6px;
 }
@@ -90,10 +84,11 @@ body {
   margin-right: 8px;
 }
 
-.fila {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+.stat-icon-v {
+  width: 30px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 .info-personaje {

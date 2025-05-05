@@ -1,6 +1,12 @@
+//añadir audio de glitch
+
 const glitchSound = new Audio("audio/glitch.mp3");
 
+// Bandera de estado para alternar entre Isaac normal y Tainted Isaac
+
 let taintedActivo = false;
+
+// Definición de Isaac normal
 
 const isaacNormal = {
   nombre: "Isaac",
@@ -18,6 +24,8 @@ const isaacNormal = {
   items: "The D6 (desbloqueable)"
 };
 
+// Definición de Tainted Isaac
+
 const taintedIsaac = {
   nombre: "Tainted Isaac",
   imagen: "img/tainted_isaac.png",
@@ -34,6 +42,8 @@ const taintedIsaac = {
   ],
   items: "Mom's Box"
 };
+
+// Función para alternar entre Isaac normal y Tainted Isaac
 
 function alternarTainted() {
   taintedActivo = !taintedActivo;
@@ -67,10 +77,14 @@ function alternarTainted() {
     document.querySelector(".nombre-personaje").textContent = personaje.nombre;
     document.querySelector(".imagen-personaje").src = personaje.imagen;
 
+    // Actualizar estadísticas
+
     const statsHTML = Object.entries(personaje.stats).map(([key, value]) => {
       return `<p><strong>${capitalizar(key)}:</strong> ${value}</p>`;
     }).join("");
     document.querySelector(".stats").innerHTML = statsHTML;
+
+    // Actualizar notas y objetos iniciales
 
     const notasHTML = personaje.notas.map(nota => `<li>${nota}</li>`).join("");
     document.querySelector(".info-extra").innerHTML = `

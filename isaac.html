@@ -10,42 +10,11 @@
 </head>
 <body>
   <div class="carta">
-    <div class="fila">
-      <!-- Columna izquierda: Carta del personaje -->
-      <div class="contenedor-personaje">
-        <h1 class="nombre-personaje">Isaac</h1>
-      
-        <div class="imagen-box">
-          <img src="img/isaac.png" alt="Isaac" class="imagen-personaje">
-        </div>
-
-        <button onclick="alternarTainted()" id="botonTainted">Tainted</button>
-
-        <div class="stats">
-          <h3>Estadísticas</h3>
-          <p><img src="icons/heart.webp" alt="Salud" class="stat-icon"> <strong>Salud:</strong> 3 corazones</p>
-          <p><img src="icons/speed.webp" alt="Velocidad" class="stat-icon"> <strong>Velocidad:</strong> 1.00</p>
-          <p><img src="icons/damage.webp" alt="Daño" class="stat-icon"> <strong>Daño:</strong> 3.50</p>
-          <p><img src="icons/tears.webp" alt="Lágrimas" class="stat-icon"> <strong>Lágrimas:</strong> 2.73</p>
-        </div>
-      
-        <div class="info-extra">
-          <h3>Notas</h3>
-          <ul>
-          <li>Personaje inicial del juego.</li>
-          <li>Desbloquea personajes al avanzar</li>
-          </ul>
-          <h3>Objeto Inicial</h3>
-          <p>The D6 (desbloqueable)</p>
-        </div>
-      
-      </div>
-  
       <!-- Columna derecha: Info descriptiva -->
       <div class="info-personaje">
         <h2 id="descripcion">Descripción</h2>
         <p><strong>Isaac</strong> es el personaje principal de <em>The Binding of Isaac</em>. Es el único personaje desbloqueado por defecto.</p>
-        <p>Isaac comienza con 3 corazónes rojos <img src="icons/heart.webp"> y una bomba. También comenzara con el D6 una vez lo hayas desbloqueado.</p> 
+        <p>Isaac comienza con 3 corazónes rojos <img src="icons/heart.webp"> y una bomba <img src="icons/bomba.webp">. También comenzara con el D6 <img src="icons/d6.webp">una vez lo hayas desbloqueado.</p> 
   
         <h2 id="logros">Logros desbloqueables</h2>
         <ul>
@@ -77,8 +46,38 @@
               <li>El nombre completo de Isaac es Isaac Moriah, el lugar donde Abraham toma a su hijo Isaac para sacrificarlo, en el Libro de Genesis</li>
         </ul>
       </div>
-  
-    </div>
+      
+      <!-- Columna izquierda: Carta del personaje -->
+      <div class="contenedor-personaje">
+        <h1 class="nombre-personaje">Isaac</h1>
+      
+        <div class="imagen-box">
+          <img src="img/isaac.png" alt="Isaac" class="imagen-personaje">
+        </div>
+
+        <button onclick="alternarTainted()" id="botonTainted">Tainted</button>
+
+        <div class="stats">
+          <h3>Estadísticas</h3>
+          <p><img src="icons/heart.webp" alt="Salud" class="stat-icon"> <strong>Salud:</strong> 3 corazones</p>
+          <p><img src="icons/speed.webp" alt="Velocidad" class="stat-icon-v"> <strong>Velocidad:</strong> 1.00</p>
+          <p><img src="icons/damage.webp" alt="Daño" class="stat-icon"> <strong>Daño:</strong> 3.50</p>
+          <p><img src="icons/tears.webp" alt="Lágrimas" class="stat-icon"> <strong>Lágrimas:</strong> 2.73</p>
+        </div>
+      
+        <div class="info-extra">
+          <h3>Notas</h3>
+          <ul>
+          <li>Personaje inicial del juego.</li>
+          <li>Desbloquea personajes al avanzar</li>
+          </ul>
+          <h3>Objeto Inicial</h3>
+          <p>The D6 (desbloqueable)</p>
+        </div>
+      
+      </div>
+
   </div>
+
 </body>
 </html>
