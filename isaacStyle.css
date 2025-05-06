@@ -11,8 +11,8 @@ body {
 
 .carta {
   background-color: #5C3A31;
-  width: 100%;
-  max-width: 1000px;         
+  width: 60%;
+  max-width: 1000px;
   margin: 20px auto;        
   padding: 20px;
   border-radius: 10px;
@@ -34,7 +34,11 @@ body {
   align-items: center;
   width: 100%;
   flex: 0 0 300px;
-  max-height: 60%;
+  max-height: 55%;
+  min-height: 600px;
+  justify-content:flex-start;
+  padding-bottom: 20px;
+  image-rendering: pixelated;
 }
 
 .imagen-box {
@@ -45,10 +49,15 @@ body {
 }
 
 .nombre-personaje {
-  font-size: 48px;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
   margin-bottom: 10px;
-  text-shadow: 2px 2px #000;
+  color: #f5f5f5;
+  text-shadow: 2px 2px 4px #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 .imagen-personaje {
   width: 150%;
@@ -57,12 +66,12 @@ body {
 }
 
 .stats, .info-extra {
-  width: 100%;
+  width: 80%;
   background-color: #5a4038;
   padding: 15px;
   margin-top: 10px;
   border-radius: 8px;
-  text-align: left;
+  text-align: center;
   color: #fffce6;
 }
 
@@ -81,7 +90,7 @@ body {
   width: 30px;
   height: 30px;
   vertical-align: middle;
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 .stat-icon-v {
@@ -89,6 +98,13 @@ body {
   height: 20px;
   vertical-align: middle;
   margin-right: 8px;
+}
+
+.d6-icon-nota {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 6px;
 }
 
 .info-personaje {
@@ -111,7 +127,7 @@ body {
 
 .info-personaje p{
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -119,6 +135,13 @@ body {
   width: 24px;
   vertical-align: middle;
   margin-right: 5px;
+}
+
+.logros-icons {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10%;
 }
 
 #botonTainted {
@@ -176,6 +199,21 @@ body.tainted .info-extra {
   background-color: rgba(255, 255, 255, 0.05);
   color: #f0f0f0;
 }
+
+.nombre-personaje.tainted {
+  color: #ff4e4e;
+  font-size: 42px;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 6px rgba(255, 78, 78, 0.6);
+}
+
+.imagen-personaje.tainted{
+  height: 150px;
+  width: 130px;
+  border-radius: 6px;
+}
+
+
 
 @keyframes glitch {
     0% {
