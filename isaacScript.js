@@ -33,7 +33,14 @@ const iconosLogros = {
   "Meat Cleaver": "icons/meatcleaver.webp",
   "Options?": "icons/options.webp",
   "The Broken": "icons/the-broken.webp",
-  "Buddy Baby": "icons/buddy-baby.webp"
+  "Buddy Baby": "icons/buddy-baby.webp",
+  "Mom's Lock": "icons/mom's-lock.webp",
+  "The Stars?": "icons/the-stars.webp",
+  "Soul of Isaac": "icons/soul-isaac.webp",
+  "Mega Chest": "icons/mega-chest.webp",
+  "Spindow Dice": "icons/spindown-dice.webp",
+  "Dice Bag": "icons/dice-bag.webp",
+  "Glitched Crown": "icons/glitched-crown.webp",
 };
 
 // Definición de Isaac normal
@@ -51,8 +58,9 @@ const isaacNormal = {
     "Personaje inicial del juego.",
     "Desbloquea personajes al avanzar."
   ],
-  items: "The D6 (desbloqueable)",
-  descripcion: "Isaac es el personaje principal de The Binding of Isaac. Es el único personaje desbloqueado por defecto. Es un niño que vive con su madre, quien lo encierra en su habitación y le prohíbe salir. Un día, su madre escucha una voz que le dice que debe sacrificar a Isaac para demostrar su fe. Isaac escapa al sótano y se enfrenta a monstruos y jefes en su camino. Isaac comienza con 3 corazónes rojos  y una bomba . También comenzara con el D6 una vez lo hayas desbloqueado.",
+  items: `<img src="icons/d6.webp" class="icon-nota">The D6 (desbloqueable)`,
+  descripcion: `<strong>Isaac</strong> es el personaje principal de <em>The Binding of Isaac</em>. Es el único personaje desbloqueado por defecto. Es un niño que vive con su madre, quien lo encierra en su habitación y le prohíbe salir. Un día, su madre escucha una voz que le dice que debe sacrificar a Isaac para demostrar su fe. Isaac escapa al sótano y se enfrenta a monstruos y jefes en su camino.<br><br>
+                Isaac comienza con 3 corazónes rojos <img src="icons/heart.webp"> y una bomba <img src="icons/bomba.webp">. También comenzará con el D6 <img src="icons/d6.webp"> una vez lo hayas desbloqueado.`,
   logros: {
     "Isaac's Head": "Completa Boss Rush",
     "Lost Baby": "Derrota a Mom's Heart en modo difícil",
@@ -92,10 +100,10 @@ const taintedIsaac = {
   },
   notas: [
     "Versión alternativa de Isaac.",
-    "Su habilidad lo hace versátil."
+    "Su habilidad lo hace versátil." 
   ],
-  items: "Mom's Box",
-  descripcion: "Tainted Isaac es un personaje añadido en The Binding of Isaac: Repentance. Es la versión alternativa de Isaac. Se desbloquea al llegar a Casa y usar la Llave Roja, la Llave Rota o el Alma de Caín para acceder a una habitación especial en una de las paredes mientras juegas con Isaac.",
+  items: `<img src="icons/mom's-box.webp" class="icon-nota">Mom's Box`,
+  descripcion: `<strong>Isaac</strong> es un personaje desbloqueable en <em>The Binding of Isaac: Repentance</em>. Es la versión alternativa de Isaac. Se desbloquea al llegar a <img src="icons/home.webp">Casa y usar la <img src="icons/red-key.webp">Llave Roja, la <img src="icons/cracked-key.webp">Llave Rota o el <img src="icons/soul-isaac.webp">Alma de Caín para acceder a una habitación especial en una de las paredes mientras juegas con Isaac.`,
   notas2: [
     "Tainted Isaac solo puede llevar 8 objetos pasivos a la vez. Sus 8 objetos pasivos actuales se ven en la esquina superior izquierda de la pantalla, y uno de ellos está resaltado con un cuadrado blanco. Al recoger un noveno objeto pasivo, el objeto seleccionado, o mejor dicho, el que se encuentra en el cuadrado blanco, se colocará en un pedestal frente a Isaac Corrupto. Puedes pulsar la tecla de intercambio para alternar entre los objetos seleccionados.",
     "Ten cuidado al usar a Tainted Isaac mientras desbloqueas The Forgotten, ya que la segunda pieza de la pala se puede volver a enrollar."
@@ -124,6 +132,11 @@ function alternarTainted() {
 
   const body = document.body;
   const contenedor = document.querySelector(".contenedor-personaje");
+  if (taintedActivo) {
+    contenedor.classList.add("tainted");
+  } else {
+    contenedor.classList.remove("tainted");
+  }
 
   contenedor.classList.add("fade");
 
@@ -177,7 +190,7 @@ function alternarTainted() {
     // Actualizar descripción
 
     const descripcion = document.getElementById("descripcion-contenido");
-    descripcion.textContent = personaje.descripcion;
+    descripcion.innerHTML = personaje.descripcion;
     
     // Actualizar logros
 

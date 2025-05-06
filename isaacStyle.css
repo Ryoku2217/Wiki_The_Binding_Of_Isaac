@@ -44,6 +44,8 @@ body {
   justify-content:flex-start;
   padding-bottom: 20px;
   image-rendering: pixelated;
+  font-family: 'Press Start 2P', cursive;
+  font-size: .75em
 }
 
 .imagen-box {
@@ -105,7 +107,7 @@ body {
   margin-right: 8px;
 }
 
-.d6-icon-nota {
+.icon-nota {
   width: 30px;
   height: 30px;
   vertical-align: middle;
@@ -218,7 +220,9 @@ body.tainted .info-extra {
   border-radius: 6px;
 }
 
-
+.contenedor-personaje.tainted {
+  max-height: 90%; /* o el tamaño que necesites */
+}
 
 @keyframes glitch {
     0% {
@@ -265,4 +269,43 @@ body.tainted .info-extra {
   
   .glitch-efecto {
     animation: glitch 1s ease-in-out;
+  }
+
+  #volver-inicio {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; 
+    padding: 10px 20px;
+    background-color: #b61d1d;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+
+  #volver-inicio {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; 
+    padding: 10px 20px;
+    background-color: #b61d1d;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+
+  #volver-inicio {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; 
+    padding: 10px 20px;
+    background-color: #b61d1d;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 1000;
   }
