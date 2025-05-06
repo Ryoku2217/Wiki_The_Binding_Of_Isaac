@@ -282,4 +282,6 @@ body.tainted .info-extra {
     text-decoration: none;
     border-radius: 5px;
     z-index: 1000;
+    font-family: 'Press Start 2P', cursive;
   }
+
