@@ -8,8 +8,10 @@ body {
   display: flex;
   justify-content: center;
   background-image: url("img/isaac-portada1.jpg");
+  background-attachment: fixed;
   background-size: cover; 
   background-position: center;
+  background-position: 50%;
 }
 
 .carta {
