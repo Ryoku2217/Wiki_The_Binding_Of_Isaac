@@ -18,12 +18,10 @@
 </head>
 
 <body class="light body-page">
-    <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #2c1e1e; border-bottom: 3px solid #8b0000;"
-        data-bs-theme="dark">
+    <nav id="miNavbar" class="navbar sticky-top navbar-expand-lg" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand mx-auto" href="index.html">
-                <img src="img/logo.png" alt="Logo Isaac" width="300" height="60" style="padding: 1em;"
-                    class="d-inline-block align-text-top">
+            <a class="navbar-brand mx-auto">
+                <img id="logoIsaac" src="img/logo.png" alt="Logo Isaac">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -36,28 +34,25 @@
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <button class="nav-link active" onclick="location.href='pagina2.html'">Historia</button>
+                        <a class="nav-link active" href="historia.html">Historia</a>
                     </li>
-                    <li class="nav-item dropdown menu-personajes">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
                             aria-expanded="false">Personajes</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" onclick="location.href='isaac.html'">Issac</a></li>
-                            <li><a class="dropdown-item" href="#">Magdalene</a></li>
-                            <li><a class="dropdown-item" href="#">Cain</a></li>
-                            <li><a class="dropdown-item" href="#">Judas</a></li>
-                            <li><a class="dropdown-item" href="#">???</a></li>
-                            <li><a class="dropdown-item" href="#">Eve</a></li>
-                            <li><a class="dropdown-item" href="#">Samson</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Todos los personajes</a></li>
+                            <li><a class="dropdown-item characters" href="isaac.html">Issac</a></li>
+                            <li><a class="dropdown-item characters" href="#">Magdalene</a></li>
+                            <li><a class="dropdown-item characters" href="#">Cain</a></li>
+                            <li><a class="dropdown-item characters" href="#">Judas</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link de la página oficial</a>
+                        <button class="nav-link"
+                            onclick="window.open('https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/')">Ir
+                            a Steam</button>
+
                     </li>
+                    <!-- Botón de modo oscuro -->
                     <li>
                         <button id="modoToggle" class="btn right-align">Modo Oscuro</button>
                     </li>
