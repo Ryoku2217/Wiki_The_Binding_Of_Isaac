@@ -11,7 +11,7 @@ botonModo.addEventListener('click', () => {
   body.classList.remove('dark', 'light'); /* eliminamos anteriores modos, para evitar problemas */
   body.classList.add(modoNuevo);
   botonModo.textContent = modoNuevo === 'dark' ? "Modo Claro" : "Modo Oscuro";
-  localStorage.setItem('modo', modoNuevo);
+  sessionStorage.setItem('modo', modoNuevo);
 
   audioTema.src = modoNuevo === 'light' ? 'audio/lluvia.mp3' : 'audio/TERROR.mp3';
 
@@ -24,7 +24,7 @@ botonModo.addEventListener('click', () => {
 });
 
 // Aplicar modo guardado
-const modoGuardado = localStorage.getItem('modo') || 'light';
+const modoGuardado = sessionStorage.getItem('modo') || 'light';
 body.classList.add(modoGuardado);
 botonModo.textContent = modoGuardado === 'dark' ? "Modo Claro" : "Modo Oscuro";
 
@@ -32,23 +32,23 @@ botonModo.textContent = modoGuardado === 'dark' ? "Modo Claro" : "Modo Oscuro";
 botonDetenerLluvia.addEventListener('click', () => {
   lluviaActiva = !lluviaActiva;
   botonDetenerLluvia.textContent = lluviaActiva ? "Detener Lluvia" : "Reanudar Lluvia";
-  localStorage.setItem('lluviaActiva', lluviaActiva);
+  sessionStorage.setItem('lluviaActiva', lluviaActiva);
   if (lluviaActiva) {
     intervaloLluvia = setInterval(crearGota, 100);
      // .play devuelve una promesa y con catch podemos tomar medidas
     audioTema.play().catch(() => {
     console.warn("Autoplay bloqueado por el navegador.");
     });
-    localStorage.setItem('audioReproduciendo', 'true'); // Guardamos el audio que está sonando
+    sessionStorage.setItem('audioReproduciendo', 'true'); // Guardamos el audio que está sonando
   } else {
     clearInterval(intervaloLluvia);
     audioTema.pause();
-    localStorage.setItem('audioReproduciendo', 'false'); // Guardamos el audio que está pausado
+    sessionStorage.setItem('audioReproduciendo', 'false'); // Guardamos el audio que está pausado
   }
 });
 
 // Aplicar lluvia guardada
-let lluviaActiva = localStorage.getItem('lluviaActiva') === 'true'; /* Como la primera vez que abrimos la pagina tiene un null */
+let lluviaActiva = sessionStorage.getItem('lluviaActiva') === 'true'; /* Como la primera vez que abrimos la pagina tiene un null */
 let intervaloLluvia = null;
 
 // Cambiar el texto del botón según el estado guardado
