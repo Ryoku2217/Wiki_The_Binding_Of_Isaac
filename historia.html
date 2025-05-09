@@ -54,7 +54,7 @@
                     </li>
                     <!-- Botón de modo oscuro -->
                     <li>
-                        <button id="modoToggle" class="btn right-align">Modo Oscuro</button>
+                        <button id="modoToggle" class="btn">Modo Oscuro</button>
                     </li>
                 </ul>
             </div>
@@ -62,12 +62,14 @@
     </nav>
     <div id="lluvia"></div>
     <audio id="audioTema" loop></audio>
-    <button id="detenerLluvia" class="btn btn-danger position-fixed bottom-0 end-0 m-4 z-3">
+    <button id="detenerLluvia" class="btn position-fixed bottom-0 end-0">
         Detener Lluvia
     </button>
+    /* py significa padding en el eje vertical es decir arriba */
     <main class="container py-5">
-        <h1 class="mb-4 text-center titulo-principal">La Historia de The Binding of Isaac</h1>
+        <h1 class="mb-5 text-center titulo-principal">La Historia de The Binding of Isaac</h1>
 
+        /* mb es el margin buttom inferior */
         <section class="mb-5">
             <p class="parrafos-historia">
                 *The Binding of Isaac* es un videojuego creado por Edmund McMillen que toma inspiración directa de la
@@ -94,12 +96,13 @@
             </p>
         </section>
 
+        /* mb es el margin buttom inferior */
         <div class="text-center mb-5">
-            <img src="img/isaac-cry.png" alt="Isaac huyendo" class="img-fluid rounded shadow">
+            <img src="img/isaac-cry.png" alt="Isaac huyendo">
         </div>
 
         <div class="text-center">
-            <a id="volver-inicio" href="index.html" class="btn btn-primary">← Volver al inicio</a>
+            <a id="volver-inicio" href="index.html" class="btn">← Volver al inicio</a>
         </div>
     </main>
 
