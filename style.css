@@ -100,17 +100,26 @@ h1 {
     border: 2px solid;
 }
 
-.destacados h2{
+.destacados {
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 20ppx;
+}
+
+.destacados h2{
+    width: 100%;
+    text-align: center;
     color: #fff;
 }
 
 /* Tamaño adaptativo de los videos */
 .destacados img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     margin: 2vw;
-    width: 28vw;
 }
 
 /* Boton detener lluvia */
