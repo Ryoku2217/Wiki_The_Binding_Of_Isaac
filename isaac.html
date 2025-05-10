@@ -1,97 +1,124 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Isaac</title>
   <link rel="stylesheet" href="isaacStyle.css">
-  <script src="isaacScript.js"></script>
+
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
   <!-- Agregamos el icono a mi pestaña-->
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
   <div class="carta">
-      <!-- Columna izquierda: Info descriptiva -->
-      <div class="info-personaje">
-        <div class="descripcion">
-          <h2 id="descripcion">Descripción</h2>
-            <p id="descripcion-contenido"><strong>Isaac</strong> es el personaje principal de <em>The Binding of Isaac</em>. Es el único personaje desbloqueado por defecto. Es un niño que vive con su madre, quien lo encierra en su habitación y le prohíbe salir. Un día, su madre escucha una voz que le dice que debe sacrificar a Isaac para demostrar su fe. Isaac escapa al sótano y se enfrenta a monstruos y jefes en su camino.<br>
-            <br>Isaac comienza con 3 corazónes rojos <img src="icons/heart.webp"> y una bomba <img src="icons/bomba.webp">. También comenzara con el D6 <img src="icons/d6.webp">una vez lo hayas desbloqueado.</p> 
-        </div>
-
-        <div class="logros">
-          <h2 id="logros">Logros desbloqueables</h2> 
-              <p>Isaac tiene varios logros que se pueden desbloquear al completar ciertas tareas en el juego. Algunos de estos logros son:</p>
-              <ul id="logros-contenido">  
-                <li><img src="icons/Isaac'sHead.webp" class="logros-icons"><strong>Isaac's Head</strong> - Completa Boss Rush</li>
-                <li><img src="icons/lost-baby.webp" class="logros-icons"><strong>Lost Baby</strong> - Derrota a Mom's Heart en modo difícil</li>
-                <li><img src="icons/isaac's-tears.webp" class="logros-icons"><strong>Isaac's Tears</strong> - Derrota a Isaac</li>
-                <li><img src="icons/mom's-knife.webp" class="logros-icons"><strong>Mom's Knife</strong> - Derrota a Satan</li>
-                <li><img src="icons/missing-poster.webp" class="logros-icons"><strong>Missing Poster</strong> - Derrota a The Lamb</li>
-                <li><img src="icons/the-d20.webp" class="logros-icons"><strong>The D20</strong> - Derrota a ???</li>
-                <li><img src="icons/lil'-chest.webp" class="  "><strong>Lil' Chest</strong> - Derrota a Ultra Greed</li>
-                <li><img src="icons/d1.webp" class="logros-icons"><strong>D1</strong> - Derrota a Ultra Greedier</li>
-                <li><img src="icons/fart-baby.webp" class="logros-icons"><strong>Fart Baby</strong> - Derrota a Hush</li>
-                <li><img src="icons/cry-baby.webp" class="logros-icons"><strong>Cry Baby</strong> - Derrota a Mega Satan</li>
-                <li><img src="icons/d-infinity.webp" class="logros-icons"><strong>D infinity</strong> - Derrota a Delirium</li>
-                <li><img src="icons/meatcleaver.webp" class="logros-icons"><strong>Meat Cleaver</strong> - Derrota a Mother </li>
-                <li><img src="icons/options.webp" class="logros-icons"><strong>Options?</strong> - Derrota a The Beast</li>
-                <li><img src="icons/the-broken.webp" class="logros-icons"><strong>The Broken</strong> - Usa la Red Key para abrir el cuarto oculto en Casa</li>
-                <li><img src="icons/buddy-baby.webp" class="logros-icons"><strong>Buddy Baby</strong> - Completa todas las marcas en modo dificil </li>
-              </ul>
-        </div>
-
-        <div class="trivia">
-          <h2 id="trivia">Trivia</h2>
-              <p>Isaac es un personaje que ha sido objeto de muchas teorías y especulaciones por parte de los fanáticos. Algunas curiosidades sobre él son:</p>
-            <ul id="trivia-contenido">
-              <li>Isaac hace referencia a la historia bíblica de la unión de Isaac, en la que Dios le ordenó a Abraham sacrificar a su único hijo, Isaac, para demostrar su lealtad y amor.
-                "Entonces Dios le dijo: 'Toma a tu hijo, tu único hijo, a quien amas, Isaac, y ve a la región de Moriah. Sacrifícalo allí como holocausto en el monte que yo te mostraré'" (Génesis 22:2).</li>
-              <li>Edmund ha declarado que Isaac es zurdo, pero en la escena inicial, Isaac sostiene un lápiz con la mano derecha. 
-                  Esto podría ser una referencia al prejuicio católico contra la zurdera, derivado de Mateo 25:33, que proclama que Dios pondrá a los que merecen ascender al Cielo a su derecha y a los que merecen descender al Infierno a su izquierda.
-                  La madre de Isaac podría haberlo obligado a trabajar con la mano derecha. La práctica general de obligar a los zurdos a usar la mano derecha también ha sido una práctica desde hace mucho tiempo, y la aceptación de los zurdos solo comenzó a notarse en 1971.</li>
-              <li>Isaac es calvo porque su mamá lo rapo</li>
-              <li>El nombre completo de Isaac es Isaac Moriah, el lugar donde Abraham toma a su hijo Isaac para sacrificarlo, en el Libro de Genesis</li>
-            </ul>
-        </div>
+    <!-- Columna izquierda: Info descriptiva -->
+    <div class="info-personaje">
+      <div class="descripcion">
+        <h2 id="descripcion">Descripción</h2>
+        <p id="descripcion-contenido"><strong>Isaac</strong> es el personaje principal de <em>The Binding of Isaac</em>.
+          Es el único personaje desbloqueado por defecto. Es un niño que vive con su madre, quien lo encierra en su
+          habitación y le prohíbe salir. Un día, su madre escucha una voz que le dice que debe sacrificar a Isaac para
+          demostrar su fe. Isaac escapa al sótano y se enfrenta a monstruos y jefes en su camino.<br>
+          <br>Isaac comienza con 3 corazónes rojos <img src="icons/heart.webp"> y una bomba <img
+            src="icons/bomba.webp">. También comenzara con el D6 <img src="icons/d6.webp">una vez lo hayas desbloqueado.
+        </p>
       </div>
 
-      <!-- Columna derecha: Carta del personaje -->
-      <div class="contenedor-personaje">
-        <h1 class="nombre-personaje">Isaac</h1>
-      
-        <div class="imagen-box">
-          <img src="img/isaac.png" alt="Isaac" class="imagen-personaje">
-        </div>
+      <div class="logros">
+        <h2 id="logros">Logros desbloqueables</h2>
+        <p>Isaac tiene varios logros que se pueden desbloquear al completar ciertas tareas en el juego. Algunos de estos
+          logros son:</p>
+        <ul id="logros-contenido">
+          <li><img src="icons/Isaac'sHead.webp" class="logros-icons"><strong>Isaac's Head</strong> - Completa Boss Rush
+          </li>
+          <li><img src="icons/lost-baby.webp" class="logros-icons"><strong>Lost Baby</strong> - Derrota a Mom's Heart en
+            modo difícil</li>
+          <li><img src="icons/isaac's-tears.webp" class="logros-icons"><strong>Isaac's Tears</strong> - Derrota a Isaac
+          </li>
+          <li><img src="icons/mom's-knife.webp" class="logros-icons"><strong>Mom's Knife</strong> - Derrota a Satan</li>
+          <li><img src="icons/missing-poster.webp" class="logros-icons"><strong>Missing Poster</strong> - Derrota a The
+            Lamb</li>
+          <li><img src="icons/the-d20.webp" class="logros-icons"><strong>The D20</strong> - Derrota a ???</li>
+          <li><img src="icons/lil'-chest.webp" class="  "><strong>Lil' Chest</strong> - Derrota a Ultra Greed</li>
+          <li><img src="icons/d1.webp" class="logros-icons"><strong>D1</strong> - Derrota a Ultra Greedier</li>
+          <li><img src="icons/fart-baby.webp" class="logros-icons"><strong>Fart Baby</strong> - Derrota a Hush</li>
+          <li><img src="icons/cry-baby.webp" class="logros-icons"><strong>Cry Baby</strong> - Derrota a Mega Satan</li>
+          <li><img src="icons/d-infinity.webp" class="logros-icons"><strong>D infinity</strong> - Derrota a Delirium
+          </li>
+          <li><img src="icons/meatcleaver.webp" class="logros-icons"><strong>Meat Cleaver</strong> - Derrota a Mother
+          </li>
+          <li><img src="icons/options.webp" class="logros-icons"><strong>Options?</strong> - Derrota a The Beast</li>
+          <li><img src="icons/the-broken.webp" class="logros-icons"><strong>The Broken</strong> - Usa la Red Key para
+            abrir el cuarto oculto en Casa</li>
+          <li><img src="icons/buddy-baby.webp" class="logros-icons"><strong>Buddy Baby</strong> - Completa todas las
+            marcas en modo dificil </li>
+        </ul>
+      </div>
 
-        <button onclick="alternarTainted()" id="botonTainted">Tainted</button>
+      <div class="trivia">
+        <h2 id="trivia">Trivia</h2>
+        <p>Isaac es un personaje que ha sido objeto de muchas teorías y especulaciones por parte de los fanáticos.
+          Algunas curiosidades sobre él son:</p>
+        <ul id="trivia-contenido">
+          <li>Isaac hace referencia a la historia bíblica de la unión de Isaac, en la que Dios le ordenó a Abraham
+            sacrificar a su único hijo, Isaac, para demostrar su lealtad y amor.
+            "Entonces Dios le dijo: 'Toma a tu hijo, tu único hijo, a quien amas, Isaac, y ve a la región de Moriah.
+            Sacrifícalo allí como holocausto en el monte que yo te mostraré'" (Génesis 22:2).</li>
+          <li>Edmund ha declarado que Isaac es zurdo, pero en la escena inicial, Isaac sostiene un lápiz con la mano
+            derecha.
+            Esto podría ser una referencia al prejuicio católico contra la zurdera, derivado de Mateo 25:33, que
+            proclama que Dios pondrá a los que merecen ascender al Cielo a su derecha y a los que merecen descender al
+            Infierno a su izquierda.
+            La madre de Isaac podría haberlo obligado a trabajar con la mano derecha. La práctica general de obligar a
+            los zurdos a usar la mano derecha también ha sido una práctica desde hace mucho tiempo, y la aceptación de
+            los zurdos solo comenzó a notarse en 1971.</li>
+          <li>Isaac es calvo porque su mamá lo rapo</li>
+          <li>El nombre completo de Isaac es Isaac Moriah, el lugar donde Abraham toma a su hijo Isaac para
+            sacrificarlo, en el Libro de Genesis</li>
+        </ul>
+      </div>
+    </div>
 
-        <div class="stats">
-          <h3>Estadísticas</h3>
-          <p><img src="icons/heart.webp" alt="Salud" class="stat-icon"> <strong>Salud:</strong> 3 corazones</p>
-          <p><img src="icons/speed.webp" alt="Velocidad" class="stat-icon-v"> <strong>Velocidad:</strong> 1.00</p>
-          <p><img src="icons/damage.webp" alt="Daño" class="stat-icon"> <strong>Daño:</strong> 3.50</p>
-          <p><img src="icons/tears.webp" alt="Lágrimas" class="stat-icon"> <strong>Lágrimas:</strong> 2.73</p>
-        </div>
-      
-        <div class="info-extra">
-          <h3>Notas</h3>
-          <ul>
+    <!-- Columna derecha: Carta del personaje -->
+    <div class="contenedor-personaje">
+      <h1 class="nombre-personaje">Isaac</h1>
+
+      <div class="imagen-box">
+        <img src="img/isaac.png" alt="Isaac" class="imagen-personaje">
+      </div>
+
+      <button onclick="alternarTainted()" id="botonTainted">Tainted</button>
+
+      <div class="stats">
+        <h3>Estadísticas</h3>
+        <p><img src="icons/heart.webp" alt="Salud" class="stat-icon"> <strong>Salud:</strong> 3 corazones</p>
+        <p><img src="icons/speed.webp" alt="Velocidad" class="stat-icon-v"> <strong>Velocidad:</strong> 1.00</p>
+        <p><img src="icons/damage.webp" alt="Daño" class="stat-icon"> <strong>Daño:</strong> 3.50</p>
+        <p><img src="icons/tears.webp" alt="Lágrimas" class="stat-icon"> <strong>Lágrimas:</strong> 2.73</p>
+      </div>
+
+      <div class="info-extra">
+        <h3>Notas</h3>
+        <ul>
           <li>Personaje inicial del juego.</li>
           <li>Desbloquea personajes al avanzar</li>
-          </ul>
-          <h3>Objeto Inicial</h3>
-          <p><img src="icons/d6.webp" class="icon-nota">The D6 (desbloqueable)</p>
-        </div>
-      
+        </ul>
+        <h3>Objeto Inicial</h3>
+        <p><img src="icons/d6.webp" class="icon-nota">The D6 (desbloqueable)</p>
       </div>
+
+    </div>
 
   </div>
   <div>
     <a id="volver-inicio" href="index.html">← Volver al inicio</a>
-  </div>
+      
+  </div>
+  <script src="isaacScript.js"></script>
 </body>
+
 </html>
